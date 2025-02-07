@@ -14,7 +14,7 @@ const Summary = ({ score, totalQuestions, responses, reset }) => {
     <div className='summary-container'>
       <h1>Quiz Summary</h1>
       <hr />
-      <h2>Your Score: {score} / {totalQuestions}</h2>
+      <h2>Your Score: {score} / {totalQuestions *4 } </h2>
       <ul className='responce-container'>
         {responses.map((response, i) => (
           <li key={i}>

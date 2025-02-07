@@ -41,10 +41,11 @@ const Quiz = ({ questions, duration }) => {
       let isCorrect = false;
       if (question.options[ansIndex].is_correct) {
         e.target.classList.add("correct");
-        setScore(prev => prev + 1);
+        setScore(prev => prev + 4);
         isCorrect = true;
       } else {
         e.target.classList.add("wrong");
+        setScore(prev => prev -1);
         if (optionRefs.current.find(ref => ref.current && question.options[ref.current.dataset.index].is_correct)) {
           optionRefs.current.find(ref => ref.current && question.options[ref.current.dataset.index].is_correct).current.classList.add("correct");
         }

@@ -23,7 +23,11 @@
     margin: 10px 0;
   }
   .details{
-    display: flex;
+    
     justify-content: space-around;
+    align-items: center;
+    gap: 5px;
   }
-  
+  .bbtn{
+    background-color: rgb(171, 81, 255);
+  }
