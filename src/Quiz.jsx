@@ -104,7 +104,7 @@ const Quiz = ({ questions, duration }) => {
 
   return (
     <div className='container'>
-      <h1>Quiz App</h1>
+      <h1>Web-Quiz</h1>
       <hr />
       <div className="timer">
         Time Left: {Math.floor(timeLeft / 60)}:{String(timeLeft % 60).padStart(2, '0')}
