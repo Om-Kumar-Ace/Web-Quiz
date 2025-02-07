@@ -1,0 +1,29 @@
+/* src/StartQuiz.css */
+.start-quiz {
+    width: 500px;
+    margin: auto;
+    padding: 30px 40px;
+    margin-top: 100px;
+    background: white;
+    color: #262626;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  .OnCorrect{
+    color: rgb(0, 255, 174);
+  }
+  .OnIncorrect{
+    color: rgb(255, 55, 0);
+  }
+  .start-quiz h2, .start-quiz h5, .start-quiz h6 {
+    margin: 10px 0;
+  }
+  .details{
+    display: flex;
+    justify-content: space-around;
+  }
+  
