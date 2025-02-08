@@ -11,9 +11,9 @@
 - Technologies: React, Axios, React Router
 
 ## Screenshots
-![Start Screen](screenshots/start.png)
-![Question Screen](screenshots/question.png)
-![Summary Screen](screenshots/summary.png)
+![Start Screen](./screenshots/start.png)
+![Question Screen](./screenshots/question.png)
+![Summary Screen](./screenshots/summary.png)
 
 ## Video Walkthrough
-[Link to video](https://www.youtube.com/...)
+[Link to video]()
