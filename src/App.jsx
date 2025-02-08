@@ -13,16 +13,21 @@ import Summary from "./Summary";
 const fetchData = async () => {
   try {
     const response = await axios.get('https://api.jsonserve.com/Uw5CrX');
-    return response.data;
+    // console.log('Data fetched:', response.data);
+    return response;
   } catch (error) {
-    console.error('Error fetching data from API, using local data:', error);
+    if (error.response && error.response.status === 500) {
+      // console.error('Internal Server Error: Please try again later or contact the API provider.');
+    } else {
+      // console.error('Error fetching data:', error);
+    }
     return quizData;
   }
 };
-
 const theme = createTheme();
 
 const App = () => {
+  
   const [quizDetails, setQuizDetails] = useState({});
 
   useEffect(() => {
